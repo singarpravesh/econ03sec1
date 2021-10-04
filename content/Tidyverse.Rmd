@@ -1,7 +1,5 @@
 ---
 title: "Tidyverse"
-author: "Pravesh"
-date: "September 2021"
 output: 
   ioslides_presentation:
     logo: logo.png

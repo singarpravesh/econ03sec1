@@ -1,0 +1,178 @@
+---
+title: "Modeling data in the Tidyverse"
+author: "Pravesh"
+date: "September 2021"
+output: 
+  ioslides_presentation:
+    smaller: true
+    logo: logo.png
+    transition: slower
+editor_options: 
+  chunk_output_type: console
+---
+
+```{css, echo=FALSE}
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 150px;
+}
+```
+
+```{r, echo=FALSE}
+options(scipen = 999, digits = 4)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+
+```
+
+## Reference
+
+**Tidyverse Skills for Data Science**
+https://jhudatascience.org/tidyversecourse/
+
+## What is Data Science?
+- Data science is the process of formulating a quantitative question that can be answered with data, collecting and cleaning data, analysing the data, and communicating the answer to the question to a relevant audience.
+- Data science tasks:
+  1. Define the question you want to ask the data.
+  2. Get the data.
+  3. Clean the data.
+  4. Explore the data.
+  5. Fit statistical models.
+  6. Communicate the results.
+  7. Make your analysis reproducible.
+- Our focus:
+  1. Define the question
+  4. Explore the data
+  5. Fit statistical models
+  
+## Types of data science questions
+
+1. Descriptive:
+  - Understand the basic components of a dataset
+  - Describe what they are 
+  - Explain it to others
+2. Exploratory
+  - Find unknown relationships between the different variables.
+  - Open ended analysis designed to find expected or unexpected relationships
+3. Inferential
+  - Use a small sample of data to say what would happen if we collected more data.
+4. Predictive
+  - Use data from a large collection to predict values for new individuals.
+  - Predictive data science is sometimes called machine learning.
+  
+---
+
+![](https://jhudatascience.org/tidyversecourse/images/ghimage/001.png){width=700px}
+
+
+## Issues with data
+- **Number of observations is too small**
+  - Collecting data is expensive or not easy
+  - Example: effect of a drug on Alzheimer disease.
+  - Small samples make it hard to be confident about the results obtained.
+- **Datasets does not contain the exact variables you are looking for**
+  - You need to know IQ, but you have is GPA
+  - You need to know *parental education* but you have *number of books in the family*
+  - Different variables but highly correlated/similar to the variable of interest are used.
+  - They are called proxy variables.
+- **Variables in the data set are not collected in the same year**
+
+---
+
+- **Dataset is not representative of the population that you are interested in**
+  - A representative sample accurately reflects the larger population.
+  - Random sampling is a necessary approach to having a representative population.
+  - If you are researching on the effect of smoking on pregnant women, then your population is pregnant women (and not men).
+- **Some variables in the dataset are measured with error**
+  - You get measurement error when you ask people about their income.
+- **Variables are confounded**
+  - Confounders are other variables that may affect our outcome but are also correlated with our main variable of interest.
+
+
+# Descriptive and Exploratory Analysis
+
+## Missing values
+
+- Load the package
+```{r}
+library(tidyverse)
+```
+- Get a glimpse of your data
+```{r}
+glimpse(msleep)
+```
+
+---
+
+- Missing values
+  - Check how missing value is coded in your dataset.
+  - In R `NA` represents missing value.
+  - It could also be represented by -999, N/A, ., or a blank space.
+  
+```{r}
+# calculate how many NAs there are in each variable
+msleep %>% 
+  map(is.na) %>% 
+  map(sum)
+```
+
+
+---
+
+```{r}
+# calculate the proportion of missingness in each variable
+msleep %>% 
+  map(is.na) %>% 
+  map(sum) %>% 
+  map(~ ./nrow(msleep)) %>% 
+  bind_cols()
+```
+
+
+---
+
+- Visualising missing values
+```{r}
+# install.packages("naniar")
+library(naniar)
+vis_miss(msleep)
+```
+
+
+## Distribution of a variable
+- Normal distribution
+```{r}
+iris %>% 
+  ggplot(aes(Sepal.Width)) +
+  geom_density()
+```
+
+
+---
+
+- Skewed distribution: Here most of the values are at the lower end of the tail.
+```{r}
+msleep %>% 
+  ggplot(aes(sleep_rem)) +
+  geom_density()
+```
+
+---
+
+- Outliers: Density plots and boxplots can be useful.
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
