@@ -1,7 +1,5 @@
 ---
 title: "Module 2: Data Management"
-author: "pravesh"
-date: "2021-08-16"
 output: html_document
 ---
 

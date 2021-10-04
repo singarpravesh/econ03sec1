@@ -1,30 +1,57 @@
 ---
-title: "Untitled"
-author: "pravesh"
-date: "04/10/2021"
+title: "Data management and presentation using Microsoft Excel and R"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+### Course Description
+It is a laboratory based hands-on practical training course followed by practical test. The students will first learn how to handle data and solve basic algebraic problems using Excel. They will learn different logical and statistical functions in Excel to compute descriptive statistics of a univariate and multivariate data set. The course shall inculcate the skill of presentation of data using different types of graphs Using solver in excel student will be able to solve linear equation system and LPP and NLPP. This exercises will be followed by
+introduction of R, which is an open access software.
 
-## R Markdown
+---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### 1. Data management and presentation using Microsoft Excel
+a. Basics of Microsoft Excel: Opening of Excel file-Workbook and worksheet- Rename of the workbook and worksheet. Brief history of Excel workbook- Advantages and disadvantages of the use of excel for statistical analysis. Location of heading/title bar- menu bar, tool bar- Formulae and function- formula space- cell-cell formatting- data entry-data clearing-copy-cut-paste, paste special – paste value-paste formula-paste transpose of the data set.
+b. Data Management: Data transformation: arithmetic operation- addition, subtraction, multiplication, log transformation, exponential, squaring and square root, indices. Use of ‘If’ function- nested if, sum, sumif, count countif, countifs, average averageif, averageifs, text to numeric and numeric to text using if function, max, min, large value of the data set, concatenate. Sort - ascending and descending, A-Z, sort row wise/column wise. Filter of the data set and create sub sample- filter according to text filter data according to
+numeric values or conditions, saving the filtered data in separate worksheet. Lookup functions.
+c. Descriptive Statistics:
+(i) Univariate Data:
+Measures of Central Tendency: mean, median, mode, Trim mean, geometric mean, harmonic mean,
+Measures of Dispersion: Range, quartile deviation, SD, CV, Gini coefficient,
+Moments and Order statistics: skewness, kurtosis, rank and percentile
+(ii) Multivariate Data: Covariance and correlation matrix, partial correlation, rank correlation.
+d. Graphical Presentation of Data: Different types of charts and their applications, Scatter diagram and Curve fitting
+e. Matrix and determinants: Computation of determinant of a square matrix, matrix – transpose- inverse– solution of a linear system - Eigen value, Eigen vector 
+f. Index Numbers: Laspeyres, Paasche and Ideal index numbers, WPI, CPI and implicit deflators
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+---
 
-```{r cars}
-summary(cars)
-```
 
-## Including Plots
+### 2. Data management and presentation using R
+a. Introduction
+i. Installing R and RStudio: R Versions, Download and install R, Installing Packages, Loading Packages, Updating R and its Packages.
+ii. User Interface, Packages and Help: The R Console, RStudio, Getting Help.
+iii. R Packages: Listing Packages in Local Libraries, Loading Packages, Package Repositories,
+Finding and Installing Packages Inside R and other Repositories.
+b. The R Language
+i. Overview: Expressions, Objects, Symbols, Functions, Special Values.
+ii. R Objects: Vectors, Integers, Character, Logical, Complex and Raw, Attributes of Objects,
+Matrices, Arrays, Class, Dates and Time, Factors, Coercion, Lists, Data Frames, Changing values,
+Logical Subsetting, Boolean Operators, Missing Information and removing NAs.
+iii. R Environment: Symbols, Working with Environments, The Global Environment.
+c. Working with data
+i. Loading and Saving data in R: Entering Data within R, Data Editor (RStudio), Datasets in R,
+Working Directory, the read Family, HTML data links, R Files, Saving R Files, Excel Spreadsheets and R, Loading files from other programs.
+ii. Preparing Data: Combining, Transforming, Binning, Subsetting, Cleaning, Sorting and Summarizing Data.
+d. Graphics
+Base Graphics: Scatter Plots, Time Series Plots, Bar Plots, Histogram, Box-Plots, Customizing Charts.
 
-You can also embed plots, for example:
+---
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### Readings
+1.David M. Levine David F. Stephan, Timothy C. Krehbiel Mark L. Berenson, Statistics for Managers Using Microsoft Excel, 5ed, Prentice Hall, Pearson 2008
+2., Joseph Schmuller Statistical Analysis with Excel For Dummies 3RD EDITION, John Wiley & Sons, Inc. 2013
+3. David Whigham, Business Data Analysis Using Excel, OUP 2007
+4. Martin Lee Abbott, Understanding Educational Statistics Using Microsoft Excel and SPSS JohnWiley & Sons, Inc. 2011
+5. Adler, J. 2012 “R In A Nutshell”, O’Reilly Media Inc., 2ed.
+6. Grolemund, G. 2014 “Hands-On Programming with R”, O’Reilly Media Inc.
+7. Hilfiger, J. 2016 “Graphing Data with R”, O’Reilly Media Inc.
