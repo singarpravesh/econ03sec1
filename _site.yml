@@ -1,6 +1,6 @@
 
 navbar: 
-  title: Home
+  title: ECON03SEC1
   right:
   - text: Lecture Materials
     href: content.html
