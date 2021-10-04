@@ -1,0 +1,8 @@
+---
+title: "R-Introduction"
+author: "pravesh"
+date: "2021-08-11"
+output: html_document
+---
+
+[1. Introduction to R](R-Introduction.html)
