@@ -4,8 +4,6 @@ navbar:
   right:
   - text: Lecture Materials
     href: content.html
-  - text: About
-    href: about.html
 output:
   html_document:
     theme: flatly
