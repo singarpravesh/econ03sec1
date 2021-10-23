@@ -2,6 +2,7 @@
 title: "Introduction"
 output: 
   ioslides_presentation:
+    smaller: true
     logo: logo.png
     transition: slower
 editor_options: 
@@ -45,10 +46,10 @@ library(gapminder)
 - The other packages can be downloaded and installed as per user requirements; for eg.`AER` package is required for econometrics.
 
 ## R-console
-![R console](https://phonlab.sitehost.iu.edu/R/WebsiteImages/R%20upon%20open.PNG)
+![R console](https://phonlab.sitehost.iu.edu/R/WebsiteImages/R%20upon%20open.PNG){width=700px}
 
 ## RStudio
-![RStudio](https://bookdown.org/gary_a_napier/induction_-_introduction_to_r/_book/images/Image2_Retry.png)
+![RStudio](https://bookdown.org/gary_a_napier/induction_-_introduction_to_r/_book/images/Image2_Retry.png){width=700px}
 
 
 

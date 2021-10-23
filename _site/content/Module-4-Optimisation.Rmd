@@ -1,7 +1,5 @@
 ---
 title: "Module 4: Optimisation"
-author: "pravesh"
-date: "2021-08-14"
 output: html_document
 ---
 
@@ -13,7 +11,7 @@ This module will deal with optimisation problem using the Solver plugin in Excel
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gtiGrG7zAqo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Download the file [Prodmix.xlsx](Prodmix.xlsx) used in the video and practice.
+- Download the file [Prodmix.xlsx](Module-4-Optimisation/Prodmix.xlsx) used in the video and practice.
 - Exercises:
   1. Suppose your drug company can purchase up to 500 hours of labor at $1 more per hour than current labor costs. How can it maximize profit?
   1. At a chip manufacturing plant, four technicians (A, B, C, and D) produce three products (Products 1, 2, and 3). This month, the chip manufacturer can sell 80 units of Product 1, 50 units of Product 2, and, at most, 50 units of Product 3. Technician A can make only Products 1 and 3. Technician B can make only Products 1 and 2. Technician C can make only Product 3. Technician D can make only Product 2. For each unit produced, the products contribute the following profit: Product 1, $\$6$; Product 2, $\$7$; and Product 3, $\$10$. The time (in hours) each technician needs to manufacture a product is as follows:

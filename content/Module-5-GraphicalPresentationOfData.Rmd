@@ -1,7 +1,5 @@
 ---
 title: "Module 5: Graphical Presentation of Data"
-author: "pravesh"
-date: "2021-08-13"
 output: html_document
 ---
 
@@ -18,15 +16,15 @@ In this section we shall learn to graph a histogram. A histogram is a commonly u
 
 - Download and practice the file used in the video.
 - Exercises:
-  1. Use the data in [Stock.xlsx](Stock.xlsx) to construct histograms for monthly returns for GE and Intel.
-  1. Use the data in [Historicalinvest2009.xlsx](Historicalinvest2009.xlsx) to create histograms for annual returns on stocks and bonds. Then compare the annual returns on these stocks and bonds.
-  1. You are given (in the [Deming.xlsx](Deming.xlsx) file) the measured diameter (in inches) for 500 rods produced by Rodco, as reported by the production foreman. A rod is considered acceptable if it is at least 1 inch in diameter. In the past, the diameter of the rods produced by Rodco has followed a symmetric histogram:<br>
+  1. Use the data in [Stock.xlsx](Module-5-GraphicalPresentationOfData/Stock.xlsx) to construct histograms for monthly returns for GE and Intel.
+  1. Use the data in [Historicalinvest2009.xlsx](Module-5-GraphicalPresentationOfData/historicalinvest2009.xlsx) to create histograms for annual returns on stocks and bonds. Then compare the annual returns on these stocks and bonds.
+  1. You are given (in the [Deming.xlsx](Module-5-GraphicalPresentationOfData/Deming.xlsx) file) the measured diameter (in inches) for 500 rods produced by Rodco, as reported by the production foreman. A rod is considered acceptable if it is at least 1 inch in diameter. In the past, the diameter of the rods produced by Rodco has followed a symmetric histogram:<br>
      • Construct a histogram of these measurements.<br>
      • Comment on any unusual aspects of the histogram.<br>
      Can you guess what might have caused any unusual aspects of the histogram? (Hint: One of quality-guru Edwards Deming’s 14 points is to “Drive out fear.”)
-  1. The [Unemployment.xlsx](Unemployment.xlsx) file contains monthly US unemployment rates. Create a histogram. Are unemployment rates symmetric or skewed?
-  1. The [Teams.xlsx](Teams.xlsx) file contains runs scored by Major League Baseball teams during a season. Create a histogram. Are runs scored symmetric or skewed?
-  1. The [NFLpoints.xlsx](NFLpoints.xlsx) file contains points scored by NFL teams during a season. Create a histogram. Are points scored symmetric or skewed?
+  1. The [Unemployment.xlsx](Module-5-GraphicalPresentationOfData/Unemployment.xlsx) file contains monthly US unemployment rates. Create a histogram. Are unemployment rates symmetric or skewed?
+  1. The [Teams.xlsx](Module-5-GraphicalPresentationOfData/teams.xlsx) file contains runs scored by Major League Baseball teams during a season. Create a histogram. Are runs scored symmetric or skewed?
+  1. The [NFLpoints.xlsx](Module-5-GraphicalPresentationOfData/nflpoints.xlsx) file contains points scored by NFL teams during a season. Create a histogram. Are points scored symmetric or skewed?
   
 ## 5.2 Graphs {#five-two}
 In this section we shall cover combination charts, picture graphs, sorted graphs, dealing with missing data in graphs, adding vertical lines to line graphs, radar, and bubble graphs.
@@ -37,9 +35,9 @@ In this section we shall cover combination charts, picture graphs, sorted graphs
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jh7WmOfHa6Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-- Download the files [combinationstemp.xlsx](combinationstemp.xlsx), [Missingdata.xlsx](Missingdata.xlsx), [Picturegraph.xlsx](Picturegraph.xlsx),  used in the videos and practice.
+- Download the files [combinationstemp.xlsx](Module-5-GraphicalPresentationOfData/combinationstemp.xlsx), [Missingdata.xlsx](Module-5-GraphicalPresentationOfData/Missingdata.xlsx), [Picturegraph.xlsx](Module-5-GraphicalPresentationOfData/Picturegraph.xlsx),  used in the videos and practice.
 - Exercises: <br>
-A. The [Cakes.xlsx](Cakes.xlsx) file contains the number of salespeople and revenue for a bakery for each month. Use this data for problems 1 to 4:
+A. The [Cakes.xlsx](Module-5-GraphicalPresentationOfData/Cakes.xlsx) file contains the number of salespeople and revenue for a bakery for each month. Use this data for problems 1 to 4:
   1. Create a combination chart with a secondary axis to summarize monthly salespeople and revenues.
   2. Graph monthly revenue and insert data labels on the chart.
   3. Graph the number of salespeople and insert a data table below the chart.
