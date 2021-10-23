@@ -1,13 +1,11 @@
 ---
 title: "Module 6: Empirical Project 1"
-author: "pravesh"
-date: "2021-08-12"
 output: bookdown::html_document2
 ---
 
 *This project is based on the content and materials of (www.core-econ.org) *
 
-## Project: The behaviour of average surface temperature over time
+# Project: The behaviour of average surface temperature over time
 
 In this project we shall consider the data from NASA about land-ocean temperature anomalies in the northern hemisphere. Figure \@ref(fig:1) is constructed using this data and shows temperatures in northern hemisphere over the period 1880-2019, expressed as differences from the average temperature from 1951-1980.
 
@@ -30,7 +28,7 @@ read.csv("Module-6-Empirical-Project-1/NASA.csv", header = TRUE, na.strings = "*
 - Under the subheading ‘Combined Land-Surface Air and Sea-Surface Water Temperature Anomalies’, select the CSV version of ‘Northern Hemisphere-mean monthly, seasonal, and annual means’ (right-click and select ‘Save Link As…’).
 - The default name of this file is NH.Ts+dSST.csv. Give it a suitable name and save it in an easily accessible location, such as a folder on your Desktop or in your personal folder.
 
-## Questions
+# Questions
 1. Choose one month and plot a line chart with average [temperature anomaly](https://data.giss.nasa.gov/gistemp/faq/#q101) on the vertical axis and time (from 1880 to the latest year available) on the horizontal axis. Label each axis and give a suitable title to your chart.
 
 1. The columns labeled ‘DJF’, ‘MAM’, ‘JJA’, and ‘SON’ contain seasonal averages (means). For example, the ‘MAM’ column contains the average of the March, April, and May columns for each year. Plot a separate line chart for each season, using average temperature anomaly for that season on the vertical axis and time (from 1880 to the latest year available) on the horizontal axis.

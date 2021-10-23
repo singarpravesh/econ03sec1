@@ -15,6 +15,8 @@ output: html_document
 ### [2. Data Management](content/Module-2-Data-Management.html){target="_blank"}
 ### [3. Descriptive Statistics](content/Module-3-Descriptive-Stats.html){target="_blank"}
 ### [4. Optimisation](content/Module-4-Optimisation.html){target="_blank"}
+### [5. Graphical Presentation of Data](content/Module-5-GraphicalPresentationOfData.html){target="_blank"}
+### [6. Empirical Project 1](content/Module-6-Empirical-Project-1.html){target="_blank"}
 </div>
 
 <div style="float: right; width: 45%;">
