@@ -1,0 +1,64 @@
+---
+title: "Internal Assessment"
+author: "ECON03SEC1 2023"
+format: html
+editor_options: 
+  chunk_output_type: console
+---
+
+## Use the gapminder dataset to answer the following questions:
+1. How many unique countries are included in the dataset? 
+```{r}
+library(gapminder)
+names(gapminder)
+library(tidyverse)
+unique(gapminder$country)
+```
+
+
+2. Identify the countries with the highest and lowest GDP per capita. 
+```{r}
+gapminder %>% 
+  arrange(gdpPercap) %>% 
+  select(country, gdpPercap)
+
+gapminder %>% 
+  arrange(desc(gdpPercap)) %>% 
+  select(country, gdpPercap)
+
+```
+
+
+3. Calculate the average life expectancy across all countries and years.
+```{r}
+gapminder %>% 
+  group_by(country, year) %>% 
+  summarise(mean(lifeExp))
+```
+
+
+4. Create a box plot to visualize the distribution of GDP per capita for each continent. Write down your observations.
+```{r}
+gapminder %>% 
+  ggplot(aes(x = continent, y = gdpPercap))+
+  geom_boxplot()
+```
+
+5. Calculate the correlation between life expectancy and GDP per capita for each continent over the years 1952 to 2007. What are your observations?
+```{r}
+gapminder %>% 
+  group_by(continent, year) %>% 
+  summarise(cor(lifeExp, gdpPercap)) 
+```
+
+6. Create histograms or density plots to visualize the distribution of life expectancy, GDP per capita, and population size. 
+7. Create scatter plots to examine the relationship between GDP per capita and life expectancy continent wise. (Use log of GDP per capita and log life expectancy).
+8. Plot a line graph to show the change in life expectancy and GDP per capita for a specific country over time.  (Use log of GDP per capita and log life expectancy).
+```{r}
+gapminder %>% 
+  filter(country == "India") %>% 
+  ggplot(aes(x = year))+
+  geom_line(aes(y = log(lifeExp)), col = "red")+
+  geom_line(aes(y = log(gdpPercap)))
+```
+
